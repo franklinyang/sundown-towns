@@ -23,4 +23,5 @@ def get_county_from_city(city, state, city_county_map):
     if lookup_str in city_county_map.keys():
         return city_county_map[lookup_str]
     else:
-        print("missed mapping: ", city)
+        return "Missed mapping"
+        # print("missed mapping: ", city, ",", state)
